@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* NAVBAR */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+.container-fluid {
+  background-color: rgb(232, 232, 230);
+  transition: color 1s;
+
+  padding: 1.1rem;
+  font-size: 1.3rem;
+}
+
+.nav-soc {
+  color: gray;
+}
+.nav-item {
+  transition: color 1s;
+}
+
+.nav-item .nav-link:hover {
+  color: rgb(255, 183, 39);
+}
+
+.icon {
+  transition: color 1s;
+}
+.icon .nav-soc:hover {
+  color: aqua !important;
+}
+
+/* CAROUSEL */
+.carousel-item {
+  max-height: calc(100vh - 3.5rem);
+}
+.carousel-indicators button {
+  background-color: red !important;
+  margin-right: 0.7rem !important;
+  height: 0.4rem !important;
+  width: 3rem !important;
+}
+
+.carousel-item h5 {
+  color: red;
+  text-shadow: 2px 2px 2px black;
+  letter-spacing: 0.7rem;
+}
+
+.carousel-item p {
+  color: white;
+  font-weight: 600;
+}
+
+.carousel-caption {
+  bottom: 5rem;
+}
+
+/* ABOUT ME */
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: #3b434a;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #eef0f2;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+#mug img {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 5px #ccc;
+  border-radius: 25px;
+}
+.row li {
+  list-style: none;
+}
+
+.skills-content {
+  margin-top: 2rem;
+}
+.skills-content .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills-content .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  display: block;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  color: #3b434a;
+}
+.skills-content .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills-content .progress-bar-wrap {
+  background: #e6e8eb;
+}
+.skills-content .progress-bar {
+  width: 50%;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #ffb727;
+}
