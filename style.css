@@ -15,8 +15,10 @@
   padding: 1.1rem;
   font-size: 1.3rem;
 }
-
-.nav-soc {
+.navbar-brand {
+  transition: color 2s;
+}
+.navbar-brand .nav-soc {
   color: gray;
 }
 .nav-item {
@@ -27,11 +29,12 @@
   color: rgb(255, 183, 39);
 }
 
-.icon {
+.icon .nav-soc {
+  color: #687683;
   transition: color 1s;
 }
 .icon .nav-soc:hover {
-  color: aqua !important;
+  color: rgb(255, 183, 39);
 }
 
 /* CAROUSEL */
@@ -48,12 +51,9 @@
 .carousel-item h5 {
   color: red;
   text-shadow: 2px 2px 2px black;
-  letter-spacing: 0.7rem;
-}
-
-.carousel-item p {
-  color: white;
-  font-weight: 600;
+  letter-spacing: 0.2rem;
+  word-spacing: 25px;
+  font-size: 2rem;
 }
 
 .carousel-caption {
@@ -281,4 +281,85 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background-image: url("images /hacking-2903156_960_720.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+#footer .container {
+  position: relative;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Satisfy", serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: transparent;
+  /* background: #ffb727; */
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.2s;
+  border: 1px solid #fff;
+}
+#footer .social-links a:hover {
+  background: #f3a200;
+  color: #fff;
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+.up-btn {
+  background-color: red;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0.7rem;
+  text-align: center;
 }
